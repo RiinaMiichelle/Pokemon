@@ -1,1 +1,28 @@
-//starting pokemon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon</title>
+</head>
+<body>
+
+  <!-- When you click this button, the users collected in the fetch request will be logged in the console in your devtools tray -->
+  <button onclick="consolePokemon()">Console Pokemon</button>
+
+  <!-- When you click this button the users collected from the fetch request will be displayed below in the ul element with the id='all-users' -->
+  <button onclick="displayPokemon()">Display Users</button>
+
+  <div>
+    <h3>All Pokemon</h3>
+    <ul id='all-pokemon'>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <script src="./pokemon.js"></script>
+</body>
+</html>
