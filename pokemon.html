@@ -7,18 +7,18 @@
   <title>Pokemon</title>
 </head>
 <body>
-
-  <!-- When you click this button, the users collected in the fetch request will be logged in the console in your devtools tray -->
-  <button onclick="consolePokemon()">Console Pokemon</button>
-
   <!-- When you click this button the users collected from the fetch request will be displayed below in the ul element with the id='all-users' -->
-  <button onclick="displayPokemon()">Display Pokemon</button>
-
+  <h3>Pokemon Arena</h3>
+  <div id="loadingPokemon">Loading Pokemon...</div>
+  <button id="displayPokemonButton" onclick="displayPokemon()" hidden=true>Generate Two Pokemon</button>
   <div>
-    <h3>All Pokemon</h3>
-    <ul id='all-pokemon'>
-    </ul>
+    <div id="pokemon1"></div>
+    <br />
+    <div id="pokemon2"></div>
+    <br />
+    <div id="battleResults"></div>
   </div>
+  <button id="battle" onclick="battlePokemon()" hidden=true>Battle</button>
   <script src="./pokemon.js"></script>
 </body>
 </html>
