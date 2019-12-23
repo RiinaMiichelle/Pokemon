@@ -1,1 +1,24 @@
-//starting pokemon
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pokemon</title>
+</head>
+<body>
+  <!-- When you click this button the users collected from the fetch request will be displayed below in the ul element with the id='all-users' -->
+  <h3>Pokemon Arena</h3>
+  <div id="loadingPokemon">Loading Pokemon...</div>
+  <button id="displayPokemonButton" onclick="displayPokemon()" hidden=true>Generate Two Pokemon</button>
+  <div>
+    <div id="pokemon1"></div>
+    <br />
+    <div id="pokemon2"></div>
+    <br />
+    <div id="battleResults"></div>
+  </div>
+  <button id="battle" onclick="battlePokemon()" hidden=true>Battle</button>
+  <script src="./pokemon.js"></script>
+</body>
+</html>
